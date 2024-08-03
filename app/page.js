@@ -90,7 +90,7 @@ export default function Home() {
                   Thank you for considering Hec the Handyman for your home improvement needs. Contact us today to learn more about our services and how we can help you with your next project.
                 </p>
                 <p className="mb-4 text-lg text-center">
-                  <a href="#contact" className="bg-gray-800 hover:bg-white hover:text-black text-white px-4 py-2 rounded-lg inline-block">Contact Us Today</a>
+                  <a href="tel:+18303213057" className="bg-gray-800 hover:bg-white hover:text-black text-white px-4 py-2 rounded-lg inline-block">Contact Us Today</a>
                 </p>
               </div>
               <div className="w-full md:w-1/2 p-4">

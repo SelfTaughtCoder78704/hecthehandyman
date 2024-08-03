@@ -59,6 +59,12 @@ function ContactSection() {
         <h2 className="text-3xl font-bold mb-4 text-center">Contact Us</h2>
         <ContactForm />
       </section>
+      <section className="text-center">
+        <h2 className="text-3xl font-bold mb-4">Contact Information</h2>
+        <p className="mb-2"><strong>Phone:</strong><a href="tel:+18303213057" className="hover:underline">(830) 321-3057</a></p>
+        <p className="mb-2"><strong>Email:</strong><a href="mailto:bobby@hecthehandyman.com" className="hover:underline">bobby@hecthehandyman.com</a></p>
+        <p className="mb-2"><strong>Service Area:</strong> Serving Temple, TX and Surrounding Areas</p>
+      </section>
       <section className="mb-8 text-center">
         <h2 className="text-3xl font-bold mb-4">Our Location</h2>
         <div className="flex justify-center">
@@ -72,12 +78,7 @@ function ContactSection() {
           ></iframe>
         </div>
       </section>
-      <section className="text-center">
-        <h2 className="text-3xl font-bold mb-4">Contact Information</h2>
-        <p className="mb-2"><strong>Phone:</strong> (830) 321-3057</p>
-        <p className="mb-2"><strong>Email:</strong> info@hecthehandyman.com</p>
-        <p className="mb-2"><strong>Address:</strong> 123 Handyman Lane, Temple, TX</p>
-      </section>
+
     </div>
   );
 }
