@@ -60,16 +60,15 @@ function ContactSection() {
         <ContactForm />
       </section>
       <section className="text-center">
-        <h2 className="text-3xl font-bold mb-4">Contact Information</h2>
-        <p className="mb-2"><strong>Phone:</strong><a href="tel:+18303213057" className="hover:underline">(830) 321-3057</a></p>
-        <p className="mb-2"><strong>Email:</strong><a href="mailto:bobby@hecthehandyman.com" className="hover:underline">bobby@hecthehandyman.com</a></p>
-        <p className="mb-2"><strong>Service Area:</strong> Serving Temple, TX and Surrounding Areas</p>
+        <h2 className="text-[10px] md:text-3xl font-bold mb-4">Contact Information</h2>
+        <p className="mb-2"><strong>Phone:</strong><br/><a href="tel:+18303213057" className="hover:underline">(830) 321-3057</a></p>
+        <p className="mb-2"><strong>Email:</strong><br/><a href="mailto:bobby@hecthehandyman.com" className="hover:underline">bobby@hecthehandyman.com</a></p>
+        <p className="mb-2"><strong>Service Area:</strong><br/> Serving Temple, TX and Surrounding Areas</p>
       </section>
       <section className="mb-8 text-center">
-        <h2 className="text-3xl font-bold mb-4">Our Location</h2>
         <div className="flex justify-center">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1281.8434951547056!2d-97.3425067333372!3d31.098234898641382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x865b4713a0d3bf33%3A0x8a2f5d5c5ec3f0f5!2sTemple%2C%20TX!5e0!3m2!1sen!2sus!4v1625154596573!5m2!1sen!2sus"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d54935.91858229366!2d-97.36968385!3d31.09856555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1681766322054!5m2!1sen!2sus"
             width="600"
             height="450"
             allowFullScreen=""
