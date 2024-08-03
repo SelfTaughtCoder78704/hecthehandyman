@@ -7,17 +7,18 @@ const testimonials = [
   },
   {
     name: "Debbie Smith",
-    text: "Professional and efficient. My go-to handyman in Temple, TX.",
+    text: "&quot;Professional and efficient. My go-to handyman in Temple, TX.&quot;",
   },
   {
     name: "Robert Wise",
-    text: "Excellent service and attention to detail. Will definitely use again!",
+    text: "&quot;Excellent service and attention to detail. Will definitely use again!&quot;",
   },
   {
     name: "Sara Benecourt",
-    text: "Hec the Handyman showed up for a free estimate, and ended up fixing everything on the spot! Super convenient and great work. Definitely calling them again!"
-  }
+    text: "&quot;Hec the Handyman showed up for a free estimate, and ended up fixing everything on the spot! Super convenient and great work. Definitely calling them again!&quot;",
+  },
 ];
+
 
 const Testimonials = () => {
   return (
