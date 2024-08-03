@@ -29,7 +29,7 @@ const Testimonials = () => {
           <div key={index} className="bg-white p-4 rounded-lg shadow-md w-3/4 md:w-1/2 flex flex-col items-start">
 
             <img src="/five_stars_icon.svg" alt="Five Stars" className="w-24 h-auto m-0 my-4" />
-            <p className="italic">{testimonial.text}</p>
+            <p className="italic" dangerouslySetInnerHTML={{ __html: testimonial.text }} />
             <p className="mt-2 font-bold text-right">- {testimonial.name}</p>
           </div>
         ))}
