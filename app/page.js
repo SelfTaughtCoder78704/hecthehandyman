@@ -13,7 +13,7 @@ import { useState } from "react";
 export default function Home() {
 
   const [showPhoneNumber, setShowPhoneNumber] = useState(false);
-  const [phoneNumber, setPhoneNumber] = useState("346-420-1508");
+  const [phoneNumber, setPhoneNumber] = useState("(830) 321-3057");
 
   const handlePhoneNumber = () => {
     setShowPhoneNumber(true);
@@ -39,7 +39,7 @@ export default function Home() {
         <nav className="space-x-4  text-black grid grid-cols-3">
           <Link href="#contact" className="bg-yellow-400 text-black  p-4 mt-4 block w-fit  hover:underline">Contact Us</Link>
           <Link href='#about' className="bg-yellow-400 text-black  p-4 mt-4 block w-fit  hover:underline">About Us</Link>
-          <button onClick={handlePhoneNumber} className="bg-yellow-400 text-black  p-4 mt-4 block w-fit  hover:underline">346-420-1508</button>
+          <button onClick={handlePhoneNumber} className="bg-yellow-400 text-black  p-4 mt-4 block w-fit  hover:underline">(830) 321-3057</button>
         </nav>
       </header>
       <main>

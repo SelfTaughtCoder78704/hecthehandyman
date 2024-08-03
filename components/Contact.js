@@ -74,7 +74,7 @@ function ContactSection() {
       </section>
       <section className="text-center">
         <h2 className="text-3xl font-bold mb-4">Contact Information</h2>
-        <p className="mb-2"><strong>Phone:</strong> (123) 456-7890</p>
+        <p className="mb-2"><strong>Phone:</strong> (830) 321-3057</p>
         <p className="mb-2"><strong>Email:</strong> info@hecthehandyman.com</p>
         <p className="mb-2"><strong>Address:</strong> 123 Handyman Lane, Temple, TX</p>
       </section>
