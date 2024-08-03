@@ -3,7 +3,7 @@
 const testimonials = [
   {
     name: "Jason McDaniel",
-    text: "Hec the Handyman did a fantastic job fixing my leaky faucet. Highly recommend!",
+    text: "&quot;Hec the Handyman did a fantastic job fixing my leaky faucet. Highly recommend!&quot;",
   },
   {
     name: "Debbie Smith",
