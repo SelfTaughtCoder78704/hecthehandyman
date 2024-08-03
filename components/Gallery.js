@@ -38,7 +38,7 @@ const NextArrow = ({ onClick }) => (
     className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full cursor-pointer z-10"
     onClick={onClick}
   >
-    &#8250;
+    &rsaquo;
   </div>
 );
 
@@ -47,7 +47,7 @@ const PrevArrow = ({ onClick }) => (
     className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full cursor-pointer z-10"
     onClick={onClick}
   >
-    &#8249;
+    &lsaquo;
   </div>
 );
 
