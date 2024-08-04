@@ -43,9 +43,9 @@ export default function Home() {
           priority
         />
         <nav className="hidden md:grid space-x-4 text-black grid-cols-3">
-          <Link href="#contact" className="bg-yellow-400 text-black p-4 mt-4 block w-fit hover:underline">Contact Us</Link>
-          <Link href='#about' className="bg-yellow-400 text-black p-4 mt-4 block w-fit hover:underline">About Us</Link>
-          <button onClick={handlePhoneNumber} className="bg-yellow-400 text-black p-4 mt-4 block w-fit hover:underline">(830) 321-3057</button>
+          <Link href="#contact" className="bg-yellow-400 text-black p-4 mt-4 block w-fit hover:underline"><b>Contact Us</b></Link>
+          <Link href='#about' className="bg-yellow-400 text-black p-4 mt-4 block w-fit hover:underline"><b>About Us</b></Link>
+          <button onClick={handlePhoneNumber} className="bg-yellow-400 text-black p-4 mt-4 block w-fit hover:underline"><b>(830) 321-3057</b></button>
         </nav>
         <button onClick={toggleMobileMenu} className="md:hidden text-black">
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -63,7 +63,7 @@ export default function Home() {
       <main>
         <section className="flex flex-col md:flex-row items-center justify-around bg-gray-100 p-8 md:p-0 md:max-h-[80vh] overflow-hidden">
           <div className="md:w-1/2 p-8">
-            <h1 className="text-6xl font-bold mb-4">Hec The Handyman </h1>
+            <h1 className="text-3xl lg:text-6xl font-bold mb-4">Hec The Handyman </h1>
             <h2 className="text-2xl mb-4">Your Go-To Handyman in Temple, TX</h2>
             <p className="mb-4">We offer a wide range of handyman services <br /> to meet your needs.</p>
             <Link href="#contact" className="bg-yellow-400 text-black  p-4 mt-4 block w-fit rounded-lg hover:bg-yellow-500">Contact Us</Link>

@@ -24,9 +24,9 @@ const Testimonials = () => {
   return (
     <section className="bg-gray-800 py-8">
       <h2 className="text-3xl font-bold mb-4 text-center text-white">Testimonials</h2>
-      <div className="flex flex-col items-center space-y-4">
+      <div className="flex flex-col items-center space-y-4 p-4 lg:flex-row lg:space-y-0 lg:space-x-4">
         {testimonials.map((testimonial, index) => (
-          <div key={index} className="bg-white p-4 rounded-lg shadow-md w-3/4 md:w-1/2 flex flex-col items-start">
+          <div key={index} className="bg-white p-4 rounded-lg shadow-md w-3/4 md:w-full flex flex-col items-start lg:min-h-96">
 
             <img src="/five_stars_icon.svg" alt="Five Stars" className="w-24 h-auto m-0 my-4" />
             <p className="italic" dangerouslySetInnerHTML={{ __html: testimonial.text }} />
