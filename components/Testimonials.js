@@ -1,38 +1,24 @@
-
-
-const testimonials = [
-  {
-    name: "Jason McDaniel",
-    text: "&quot;Hec the Handyman did a fantastic job fixing my leaky faucet. Highly recommend!&quot;",
-  },
-  {
-    name: "Debbie Smith",
-    text: "&quot;Professional and efficient. My go-to handyman in Temple, TX.&quot;",
-  },
-  {
-    name: "Robert Wise",
-    text: "&quot;Excellent service and attention to detail. Will definitely use again!&quot;",
-  },
-  {
-    name: "Sara Benecourt",
-    text: "&quot;Hec the Handyman showed up for a free estimate, and ended up fixing everything on the spot! Super convenient and great work. Definitely calling them again!&quot;",
-  },
-];
-
-
 const Testimonials = () => {
   return (
-    <section className="bg-gray-800 py-8">
-      <h2 className="text-3xl font-bold mb-4 text-center text-white">Testimonials</h2>
-      <div className="flex flex-col items-center space-y-4 p-4 lg:flex-row lg:space-y-0 lg:space-x-4">
-        {testimonials.map((testimonial, index) => (
-          <div key={index} className="bg-white p-4 rounded-lg shadow-md w-3/4 md:w-full flex flex-col items-start lg:min-h-96">
-
-            <img src="/five_stars_icon.svg" alt="Five Stars" className="w-24 h-auto m-0 my-4" />
-            <p className="italic" dangerouslySetInnerHTML={{ __html: testimonial.text }} />
-            <p className="mt-2 font-bold text-right">- {testimonial.name}</p>
+    <section className="bg-gray-800 px-8 py-12">
+      <div className="max-w-7xl mx-auto">
+        <h2 className="text-3xl font-bold text-center mb-8 text-white">What Our Customers Can Expect</h2>
+        <p className="text-center mb-10 text-white">We're committed to providing excellent service to our customers. Here's what you can expect when working with Hec the Handyman:</p>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+            <h3 className="font-semibold mb-2 text-xl text-gray-800">Reliability</h3>
+            <p className="text-gray-600">We pride ourselves on being punctual and dependable. When we set an appointment, you can count on us to be there.</p>
           </div>
-        ))}
+          <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+            <h3 className="font-semibold mb-2 text-xl text-gray-800">Quality Workmanship</h3>
+            <p className="text-gray-600">Our team is skilled and experienced. We ensure that every job is completed to the highest standards.</p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+            <h3 className="font-semibold mb-2 text-xl text-gray-800">Customer Satisfaction</h3>
+            <p className="text-gray-600">Your satisfaction is our top priority. We work closely with you to ensure the results meet your expectations.</p>
+          </div>
+        </div>
+        <p className="text-center mt-10 text-white">We're always striving to improve our services. If you've worked with us, we'd love to hear your feedback!</p>
       </div>
     </section>
   );
