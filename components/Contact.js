@@ -1,10 +1,22 @@
 import React from 'react';
 import { useForm, ValidationError } from '@formspree/react';
+import InputMask from 'react-input-mask';
 
 function ContactForm() {
   const [state, handleSubmit] = useForm("mdknovrb");
+  const [phoneNumber, setPhoneNumber] = React.useState('');
+
+  const validatePhoneNumber = (number) => {
+    const phoneRegex = /^\(\d{3}\) \d{3}-\d{4}$/;
+    return phoneRegex.test(number);
+  };
+
+  const handlePhoneChange = (event) => {
+    setPhoneNumber(event.target.value);
+  };
+
   if (state.succeeded) {
-    return <p className="text-center text-green-500">Thanks for joining!</p>;
+    return <p className="text-center text-green-500">Thanks for reaching out! We&apos;ll contact you shortly.</p>;
   }
   return (
     <form onSubmit={handleSubmit} className="max-w-xl mx-auto bg-white p-6 rounded-lg shadow-md">
@@ -26,6 +38,30 @@ function ContactForm() {
         />
       </div>
       <div className="mb-4">
+        <label htmlFor="phone" className="block text-gray-700">
+          Phone Number
+        </label>
+        <InputMask
+          mask="(999) 999-9999"
+          value={phoneNumber}
+          onChange={handlePhoneChange}
+        >
+          {(inputProps) => (
+            <input
+              {...inputProps}
+              id="phone"
+              name="phone"
+              type="tel"
+              className="w-full px-3 py-2 border rounded-lg"
+              required
+            />
+          )}
+        </InputMask>
+        {phoneNumber && !validatePhoneNumber(phoneNumber) && (
+          <p className="text-red-500 text-sm mt-1">Please enter a valid phone number</p>
+        )}
+      </div>
+      <div className="mb-4">
         <label htmlFor="message" className="block text-gray-700">
           Message
         </label>
@@ -43,8 +79,8 @@ function ContactForm() {
       </div>
       <button
         type="submit"
-        disabled={state.submitting}
-        className="bg-yellow-500 text-white px-4 py-2 rounded-lg hover:bg-yellow-600"
+        disabled={state.submitting || (phoneNumber && !validatePhoneNumber(phoneNumber))}
+        className="bg-yellow-500 text-white px-4 py-2 rounded-lg hover:bg-yellow-600 disabled:opacity-50"
       >
         Submit
       </button>
